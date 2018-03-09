@@ -65,15 +65,15 @@
      <h1>Mon Portfolio</h1>
      <div class="portfolio">
          <div class="portfolio-content">
-        <a class='gallery' href='images/port-01.jpg'><img src="images/port-01.jpg" alt="Borderline"></a>
+        <a class='gallery-idvisu' href='images/port-01.jpg'><img src="images/port-01.jpg" alt="Borderline"></a>
         <p>Identité visuelle</p>
          </div>
          <div class="portfolio-content">
-        <a class='gallery' href='images/port-03.jpg'><img src="images/port-03.jpg" alt="Coca"></a>
+        <a class='gallery-illu' href='images/port-03.jpg'><img src="images/port-03.jpg" alt="Coca"></a>
         <p>Illustration</p>
          </div>
          <div class="portfolio-content">
-        <a class='gallery' href='images/port-02.jpg'><img src="images/port-02.jpg" alt="Reload"></a>
+        <a class='gallery-typo' href='images/port-02.jpg'><img src="images/port-02.jpg" alt="Reload"></a>
         <p>Typographie</p>
          </div>
 
@@ -93,7 +93,10 @@
 
       <script>
 
-      $('a.gallery').colorbox({rel:'gal'});
+      $('a.gallery-idvisu').colorbox({rel:'gal1'});
+      $('a.gallery-illu').colorbox({rel:'gal2'});
+      $('a.gallery-typo').colorbox({rel:'gal3'});
+
       </script>
 
       <script>
