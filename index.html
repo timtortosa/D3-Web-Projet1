@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Ma page</title>
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/jquery.colorbox-min.js"></script>
+
+
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/colorbox.css">
   </head>
   <body>
         <header>
@@ -30,7 +35,7 @@
 
  <div class="comp-section-content">
    <div class="comp-content">
-		<img class="image" src="styles/images/comp-01.jpg" alt="Foot">
+		<img class="image" src="images/comp-01.jpg" alt="Foot">
 		<h2>Champion Fifa</h2>
 		<p>Les ballons ronds et les terrains de pelouse sur un écran LCD, ça me connaît. Adepte des jeux vidéos depuis tout petit, il est clair qu'il vaut mieux m'inviter au resto qu'à une soirée Xbox. Ma devise : "C'est beau ce stade Vélodrome qui est toujours plein à domicile comme à l'extérieur".</p>
 		<p>
@@ -38,7 +43,7 @@
 		</p>
    </div>
      <div class="comp-content">
-       <img class="image" src="styles/images/comp-02.jpg" alt="Poker">
+       <img class="image" src="images/comp-02.jpg" alt="Poker">
        <h2>As du poker</h2>
        <p> Lunettes noires posées sur le bout du nez et perles de sueur sur la tempe, voilà comment se passe le temps libre à la maison. "On est pas là pour enfiler les perles mais pour empiler les jetons".</p>
 		<p>
@@ -46,7 +51,7 @@
 		</p>
      </div>
      <div class="comp-content">
-       <img class="image" src="styles/images/comp-03.jpg" alt="Auchan">
+       <img class="image" src="images/comp-03.jpg" alt="Auchan">
        <h2>Pilote de transpalette</h2>
        <p>Bientôt 2 ans que je tire des palettes à Auchan le samedi. Gestion des virages, passage éclair à l'écurie et dérapages contrôlés, je suis prêt pour les 24h du Mans avec ma bête à roulettes rouge.</p>
 		<p>
@@ -60,16 +65,16 @@
      <h1>Mon Portfolio</h1>
      <div class="portfolio">
          <div class="portfolio-content">
-         <img class="image" src="styles/images/port-01.jpg" alt="L1">
-           <p>Identité visuelle</p>
+        <a class='gallery' href='images/port-01.jpg'><img src="images/port-01.jpg" alt="Borderline"></a>
+        <p>Identité visuelle</p>
          </div>
          <div class="portfolio-content">
-        <img class="image" src="styles/images/port-03.jpg" alt="T1">
+        <a class='gallery' href='images/port-03.jpg'><img src="images/port-03.jpg" alt="Coca"></a>
         <p>Illustration</p>
          </div>
          <div class="portfolio-content">
-          <img class="image" src="styles/images/port-02.jpg" alt="I1">
-          <p>Typographie</p>
+        <a class='gallery' href='images/port-02.jpg'><img src="images/port-02.jpg" alt="Reload"></a>
+        <p>Typographie</p>
          </div>
 
      </div>
@@ -86,6 +91,22 @@
 
       </footer>
 
+      <script>
+
+      $('a.gallery').colorbox({rel:'gal'});
+      </script>
+
+      <script>
+                    $(document).ready(function() {
+      $(".fancy_title").lettering();
+                    });
+              </script>
+
+              <script>
+                            jQuery(document).ready(function () {
+                              jQuery('a.gallery').colorbox({ opacity:0.5 , rel:'group1' });
+                            });
+                          </script>
 
   </body>
 </html>
